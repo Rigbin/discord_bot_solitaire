@@ -16,8 +16,11 @@ class ChangeClass(Base):
     async def on_raw_reaction_add(self, reaction):
         if (reaction.user_id != self.bot.user.id):
             member = await self.get_member(reaction.user_id)
+            
             reacted_msg = await member.fetch_message(reaction.message_id)
             if reaction.emoji.name in STATICS.WOW_CLASSES_EMOJIS or str(reaction.emoji.id) in STATICS.EMOJI_IDS:
+                if not self.is_member(member) and not self.is_guest(member):
+                    await member.add_roles(await self.get_guest_role(), reason='bot changed roll because of command')
                 print(f'{member.name} choose {reaction.emoji.name}')
                 my_reactions = list(
                     filter(lambda x: x.me, reacted_msg.reactions))
@@ -95,4 +98,8 @@ class ChangeClass(Base):
 
     def is_member(self, member):
         boolean = STATICS.MEMBER in list(map(lambda x: x.name, member.roles))
+        return boolean
+
+    def is_guest(self, member):
+        boolean = STATICS.GUEST in list(map(lambda x: x.name, member.roles))
         return boolean

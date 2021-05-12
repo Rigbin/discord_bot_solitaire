@@ -32,6 +32,5 @@ class Welcome(Base):
         try:
             dm = await self.send_dm(member, welcome_message(member))
             await self.add_classes(dm)
-            await member.add_roles(await self.get_guest_role(), reason='bot changed roll because of command')
         except Exception as ex:
             print(ex)
