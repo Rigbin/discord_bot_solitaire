@@ -14,7 +14,7 @@ You also need to create a bot on [discord/developers](https://discord.com/develo
 You need to save the **Token** of your Bot in an `.env` file, see [.env.EXAMPLE](.env.EXAMPLE)
 
 Your Bot needs at least the following **Permissions**:
-![permissions](./doc/discord_permissions.png)
+![permissions](.doc/discord_permissions.png)
 
 To *invite* your bot to your Discord-Server, use the **OAuth2 URL Generator**
 ![oauth generator](.doc/discord_oauth.png)
