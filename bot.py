@@ -29,8 +29,7 @@ def main():
         print(f'Logged in as {bot.user}')
 
     bot.add_cog(cc)
-    if not DEV_MODE:
-        bot.add_cog(welcome)
+    bot.add_cog(welcome)
 
     bot.run(TOKEN)
 
