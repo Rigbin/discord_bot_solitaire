@@ -1,20 +1,20 @@
 class STATICS():
     WOW_CLASSES_EMOJIS = [
-        ':Warrior:839571089474322503',
-        ':Rouge:839571089726504981',
-        ':Hunter:839571088987521038',
-        ':Warlock:839571089515610152',
-        ':Shaman:839571089445355530',
-        ':Druid:839571089427922964',
-        ':Mage:839571089395154954',
-        ':Paladin:839571089188323368',
-        ':Priest:839571089171677224',
+        ':Warrior:843898101148549190',
+        ':Rouge:843898101420654623',
+        ':Hunter:843897480047099934',
+        ':Warlock:843898101117747221',
+        ':Shaman:843898101458272256',
+        ':Druid:843897169349705761',
+        ':Mage:843898101097693247',
+        ':Paladin:843898101348958229',
+        ':Priest:843898105685737505',
     ]
 
 
     SOLITAIRE_ROLES_MAP = {
         'Warrior': 'Krieger',
-        'Rouge': 'Schurke',
+        'Rogue': 'Schurke',
         'Hunter': 'Jäger',
         'Warlock': 'Hexenmeister',
         'Shaman': 'Schamane',
