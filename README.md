@@ -19,6 +19,19 @@ Your Bot needs at least the following **Permissions**:
 To *invite* your bot to your Discord-Server, use the **OAuth2 URL Generator**
 ![oauth generator](.doc/discord_oauth.png)
 
+### Class-Icons
+You need to add the desired Class-Icons as Emoji's to your Discord server. You can find a collection of WoW Emojis for example [here](https://wowpedia.fandom.com/wiki/Wowpedia:List_of_mini_icons#World_of_Warcraft).
+
+Then, you need to ID's of this Emoji's and update them in [statics.py](util/statics.py). You can get the ID in Discord, when you write `\:EMOJI_ALIAS:` in the chat, for example:
+```
+\:Warrior:
+```
+
+### Roles
+You also need to add the desired roles manually to your Discord and change the mapping in [statics.py](util/statics.py), when you choose another naming then we. The same applies to the two roles 'Mitglied' and 'Gast'.
+
+#### Move your Bot above other Roles!
+After you add the Bot to your Discord, you need to move it above the roles, that it should be able to submit to other members. Otherwise the bot is not be able to change the roles!
 
 ## Install
 
