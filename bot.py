@@ -10,6 +10,12 @@ from util.welcome import Welcome
 
 
 def main():
+    load_dotenv()
+    # set DEV in ENVIRONMENT to 1 to enable 'dev-mode'
+    DEV_MODE = bool(int(os.getenv('DEV', 0)))
+    # bot token
+    TOKEN = os.getenv('TOKEN', None)
+
     intents = Intents.default()
     intents.members = True
 
@@ -23,11 +29,10 @@ def main():
         print(f'Logged in as {bot.user}')
 
     bot.add_cog(cc)
-    bot.add_cog(welcome)
+    if not DEV_MODE:
+        bot.add_cog(welcome)
 
-    load_dotenv()
-
-    bot.run(os.getenv('TOKEN'))
+    bot.run(TOKEN)
 
 
 if __name__ == '__main__':
