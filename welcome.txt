@@ -1,13 +1,15 @@
 Hallo **{}**, herzlich willkommen auf dem Discord-Server von Solitaire.
 Damit du Zugriff auf die für dich wichtigen Channel erhältst, führe bitte folgende Schritte durch:
-  1. Wähle aus den untenstehenden Icons deine Klasse aus. 
-  2. Ändere deinen Discord-Nickname in deinen Ingame-Namen. 
+    1.  Wähle aus den untenstehenden Icons deine Klasse aus. 
+    2.  Ändere deinen Discord-Nickname in deinen Ingame-Namen. 
+
 Solltest du Mitglied unserer Gilde sein, dann melde dich per PM im Discord bei einem Offizier (inklusive Ingame-Name).
+
 Bitte beachte auf unserem Server folgende Community-Regeln:
-  - Verhalte dich sozial und gemeinschaftlich.
-  - Nutze die Textkanäle für den jeweils benannten Kontext und führe persönliche Diskussionen per PM.
-  - Spamme die Channel nicht voll und lade keinen illegalen Content auf dem Server hoch. 
-  - Beachte die Nutzungsbedingungen von Discord.
+    -  Verhalte dich sozial und gemeinschaftlich.
+    -  Nutze die Textkanäle für den jeweils benannten Kontext und führe persönliche Diskussionen per PM.
+    -  Spamme die Channel nicht voll und lade keinen illegalen Content auf dem Server hoch. 
+    -  Beachte die Nutzungsbedingungen von Discord.
 
 Schön, dass du da bist!
 Dein Solitaire-Team
