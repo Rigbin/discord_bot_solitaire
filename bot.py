@@ -22,7 +22,7 @@ def main():
     bot = Bot(command_prefix='$', intents=intents)
 
     cc = ChangeClass(bot)
-    welcome = Welcome(bot)
+    welcome = Welcome(bot, DEV_MODE)
 
     @bot.event
     async def on_ready():

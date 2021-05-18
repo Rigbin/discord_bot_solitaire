@@ -17,7 +17,8 @@ Damit du dich auf unserem Discord bewegen kannst, wähle bitte auch deine aktive
 
 
 class Welcome(Base):
-    def __init__(self, dev_mode):
+    def __init__(self, bot, dev_mode):
+        super().__init__(bot)
         self.dev_mode = dev_mode
         try:
             with open(path.join('.', 'welcome.txt')) as file:
@@ -34,9 +35,8 @@ class Welcome(Base):
 
     @Cog.listener()
     async def on_member_join(self, member):
-        if not self.dev_mode:
-            try:
-                dm = await self.send_dm(member, self.welcome_message.format(member.name))
-                await self.add_classes(dm)
-            except Exception as ex:
-                print(ex)
+        try:
+            dm = await self.send_dm(member, self.welcome_message.format(member.name))
+            await self.add_classes(dm)
+        except Exception as ex:
+            print(ex)
